@@ -1,0 +1,38 @@
+name:                hortened
+version:             0.0.0
+Cabal-Version:       >= 1.2
+synopsis:            The imaginatively named url-hortener daemon.
+description:
+  A url-hortener server written in Haskell with a deceptively and
+  imaginatively chosen name.
+category:            Network
+license:             BSD3
+license-file:        LICENSE
+author:              Vo Minh Thu
+maintainer:          noteed@gmail.com
+build-type:          Simple
+
+executable hortened
+  main-is:             hortened.hs
+  build-depends:       base == 4.*,
+                       containers == 0.3.*,
+                       transformers == 0.2.2.*,
+                       mtl == 2.*,
+                       MonadCatchIO-transformers == 0.2.*,
+                       filepath == 1.1.*,
+                       cmdargs == 0.6.6.*,
+                       bytestring == 0.9.*,
+                       blaze-html == 0.3.2.1,
+                       snap-core == 0.4.*,
+                       snap-server == 0.4.*,
+                       time == 1.1.*,
+                       network,
+                       HDBC,
+                       HDBC-sqlite3,
+                       clientsession,
+                       random,
+                       PBKDF2,
+                       old-locale
+  ghc-options:         -Wall
+                       -fno-warn-unused-do-bind
+

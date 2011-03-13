@@ -1,0 +1,14 @@
+A URL shortener.
+
+The service run as an HTTP server. I want the service to be accessible only via
+nginx, so I bind only 127.0.0.1. Cookie reading and writing is only done in SSL
+mode. Login is only available in SSL mode.
+
+The code should be reviewed (especially w.r.t. SSL/Cookies/Login/Password
+stuffs). There are a lot of TODOs.
+
+The code is probably too specific for general use (which is the goal of this
+package).
+
+I hope to make the code readable for Haskell noobs as I think a URL shortener
+is a nice little project for beginners.
